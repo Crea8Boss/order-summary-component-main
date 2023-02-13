@@ -1,0 +1,165 @@
+/*-------- GENERAL STYLING --------*/
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: none;
+  list-style: none;
+  width: 100vw;
+  transition: all 0.5s ease-in;
+  background: var(--clr-secondary);
+}
+
+:root {
+  --clr-primary: hsl(245, 75%, 52%);
+  --clr-primary-hover: rgba(56, 41, 224, 0.7);
+
+  --clr-secondary: hsl(233, 43%, 92%);
+  --clr-secondary-tinted: rgba(146, 142, 169, 0.05);
+
+  --clr-neutral-1: hsl(225, 100%, 98%);
+  --clr-neutral-2: hsl(224, 23%, 55%);
+  --clr-neutral-3: hsl(223, 47%, 23%);
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.container {
+  background: var(--clr-neutral-1);
+  max-width: 375px;
+  margin: 60px auto;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  box-shadow: 0 5px 30px 0 var(--clr-neutral-2);
+}
+
+.card-info {
+  padding: 0 2rem 3rem;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/*--------- HEADER IMAGE STYLING ---------*/
+
+.card-header {
+  max-width: 100%;
+  margin: 0;
+}
+
+.card-header img {
+  width: 100%;
+}
+
+/*-------- CARD-INFO TOP STYLING -------*/
+
+.card-info__top {
+  padding: 0 1.2rem 0;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  }
+
+.card-info__top >.card-info__title {
+  color: var(--clr-neutral-3);
+}
+
+.card-info__top >.card-info__catchphrase {
+  color: var(--clr-neutral-2);
+  text-align: center;
+  
+}
+
+/*--------- CARD-INFO PRICE STYLING ---------*/
+.card-info__price {
+  background: var(--clr-secondary-tinted);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-info__price >.card-info__price-plan {
+  color: var(--clr-neutral-3);
+  font-weight: 900;
+}
+.card-info__price >.card-info__price-plan > span {
+  color: var(--clr-neutral-2);
+  font-weight: 700;
+}
+
+.card-info__price > a {
+  color: var(--clr-primary);
+  font-weight: 700;
+}
+
+.card-info__price > a:hover {
+  text-decoration: none;
+  color: var(--clr-primary-hover);
+}
+
+/*--------- CARD-INFO BUTTON STYLING -----------*/
+
+.card-info > button {
+  width: 100%;
+  height: 3rem;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  background: var(--clr-primary);
+  color: var(--clr-neutral-1);
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 5px 10px 0 var(--clr-neutral-2);
+}
+
+.card-info > button:hover {
+  background: var(--clr-primary-hover);
+}
+
+.card-info >.btn {
+  text-decoration: none;
+  color: var(--clr-neutral-2);
+  font-weight: 700;
+  margin-bottom: -10px;
+}
+
+.card-info >.btn:hover {
+  color: var(--clr-neutral-3);
+}
